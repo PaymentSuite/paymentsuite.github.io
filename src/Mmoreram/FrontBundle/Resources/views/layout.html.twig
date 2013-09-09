@@ -1,0 +1,34 @@
+{% block doctype_and_html %}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="{{ app.request.locale }}" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="{{ app.request.locale }}" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="{{ app.request.locale }}" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="{{ app.request.locale }}" class="no-js"> <!--<![endif]-->
+{% endblock doctype_and_html %}
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{% block title %}Chicplace - The most unique gift shops in Europe{% endblock title %}</title>
+        {% block meta_tags %}{% endblock %}
+        {# TODO - Temporary disabled (should be uncommented when Responsive version is released) #}
+        {#<meta name="viewport" content="width=device-width, initial-scale=1.0">#}
+        <link href="{{ asset('favicon.ico') }}" rel="icon" type="image/vnd.microsoft.icon">
+        <link href="{{ asset('favicon.ico') }}" rel="shortcut icon" type="image/x-icon">
+        {#<meta name="robots" content="{{ follow }}">#}
+        {% block head_style %}{% endblock head_style %}
+        {% block head_script %}{% endblock head_script %}
+    </head>
+    <body {% block bodyid %}{% endblock bodyid %} {% block bodyclass %}{% endblock bodyclass %}>
+        <!--[if lt IE 7]>
+            <div class="alert alert-info">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.
+            </div>bricks
+        <![endif]-->
+        {% block body %}{% endblock body %}
+        {% block foot_script %}
+            <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+        {% endblock foot_script %}
+    </body>
+</html>
+

@@ -1,0 +1,31 @@
+{% extends 'MmoreramFrontBundle::layout.html.twig' %}
+
+
+{% block body %}
+
+    <h2>Cart</h2>
+
+    <div>
+        Cart id : {{ cart.id }}
+    </div>
+    <div>
+        Cart price : {{ cart.price }}
+    </div>
+
+    <h2>Payment methods</h2>
+
+    <h3>Paymill</h3>
+
+    {{ paymill_render() }}
+
+{% endblock body %}
+
+
+{% block foot_script %}
+    
+    {{ parent() }}
+
+    {{ paymill_scripts() }}
+
+{% endblock foot_script %}
+

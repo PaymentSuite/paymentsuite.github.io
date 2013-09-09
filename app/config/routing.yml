@@ -1,0 +1,9 @@
+mmoreram_front:
+    resource: "@MmoreramFrontBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+
+befactory_paymill_payment:
+    resource: .
+    type:     extra

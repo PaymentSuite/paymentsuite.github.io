@@ -1,0 +1,21 @@
+services:
+
+    payment.cart.wrapper:
+        class: Mmoreram\PaymentBridgeBundle\Services\PaymentCartWrapper
+        arguments:
+            session: @session
+            entity.manager: @doctrine.orm.entity_manager
+
+    payment.order.wrapper:
+        class: Mmoreram\PaymentBridgeBundle\Services\PaymentOrderWrapper
+        arguments:
+            entity.manager: "@doctrine.orm.entity_manager"
+
+    payment.event.listener:
+        class: Mmoreram\PaymentBridgeBundle\EventListener\Payment
+        arguments:
+            entity.manager: "@doctrine.orm.entity_manager"
+            mailer: @mailer
+        tags:
+            - { name: kernel.event_listener, event: payment.success, method: onPaymentSuccess }
+            - { name: kernel.event_listener, event: payment.fail, method: onPaymentFail }
