@@ -2,6 +2,7 @@
 
 namespace Mmoreram\PaymentBridgeBundle\Services;
 
+use Mmoreram\PaymentCoreBundle\Services\Interfaces\OrderWrapperInterface;
 use Doctrine\ORM\EntityManager;
 
 class PaymentOrderWrapper implements OrderWrapperInterface

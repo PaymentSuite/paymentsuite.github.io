@@ -61,7 +61,7 @@
                     "email": "kontakt@beberlei.de"
                 },
                 {
-                    "name": "Johannes Schmitt",
+                    "name": "Johannes M. Schmitt",
                     "email": "schmittjoh@gmail.com",
                     "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
@@ -131,7 +131,7 @@
                     "email": "kontakt@beberlei.de"
                 },
                 {
-                    "name": "Johannes M. Schmitt",
+                    "name": "Johannes Schmitt",
                     "email": "schmittjoh@gmail.com",
                     "homepage": "http://jmsyst.com",
                     "role": "Developer of wrapped JMSSerializerBundle"
@@ -840,12 +840,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mmoreram/PaymillBundle.git",
-                "reference": "38b67743104beadda4f3ffca927ecd6a2a2ebf7f"
+                "reference": "a6278876938fbc5c289417bcca7ebce9408e4b76"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mmoreram/PaymillBundle/zipball/38b67743104beadda4f3ffca927ecd6a2a2ebf7f",
-                "reference": "38b67743104beadda4f3ffca927ecd6a2a2ebf7f",
+                "url": "https://api.github.com/repos/mmoreram/PaymillBundle/zipball/a6278876938fbc5c289417bcca7ebce9408e4b76",
+                "reference": "a6278876938fbc5c289417bcca7ebce9408e4b76",
                 "shasum": ""
             },
             "require": {
@@ -882,7 +882,7 @@
                 "payment",
                 "paymill"
             ],
-            "time": "2013-09-09 16:55:22"
+            "time": "2013-09-09 17:28:02"
         },
         {
             "name": "monolog/monolog",
