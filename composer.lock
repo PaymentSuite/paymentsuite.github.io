@@ -794,12 +794,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mmoreram/PaymentCoreBundle.git",
-                "reference": "273aab3d1cd4f4b573d9ad148fd202fdd9ce4d3f"
+                "reference": "00eaf7ce4811dd8d0bc2ff915133d466423c26db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mmoreram/PaymentCoreBundle/zipball/273aab3d1cd4f4b573d9ad148fd202fdd9ce4d3f",
-                "reference": "273aab3d1cd4f4b573d9ad148fd202fdd9ce4d3f",
+                "url": "https://api.github.com/repos/mmoreram/PaymentCoreBundle/zipball/00eaf7ce4811dd8d0bc2ff915133d466423c26db",
+                "reference": "00eaf7ce4811dd8d0bc2ff915133d466423c26db",
                 "shasum": ""
             },
             "require": {
@@ -831,7 +831,7 @@
                 "mmoreram",
                 "payment"
             ],
-            "time": "2013-09-09 16:05:13"
+            "time": "2013-09-10 18:36:46"
         },
         {
             "name": "mmoreram/paymill-bundle",
@@ -840,12 +840,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mmoreram/PaymillBundle.git",
-                "reference": "a6278876938fbc5c289417bcca7ebce9408e4b76"
+                "reference": "d7474cce2851f6fe4399b6cdc42edd1f91313625"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mmoreram/PaymillBundle/zipball/a6278876938fbc5c289417bcca7ebce9408e4b76",
-                "reference": "a6278876938fbc5c289417bcca7ebce9408e4b76",
+                "url": "https://api.github.com/repos/mmoreram/PaymillBundle/zipball/d7474cce2851f6fe4399b6cdc42edd1f91313625",
+                "reference": "d7474cce2851f6fe4399b6cdc42edd1f91313625",
                 "shasum": ""
             },
             "require": {
@@ -882,7 +882,7 @@
                 "payment",
                 "paymill"
             ],
-            "time": "2013-09-09 17:28:02"
+            "time": "2013-09-10 18:40:25"
         },
         {
             "name": "monolog/monolog",
@@ -1121,12 +1121,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioGeneratorBundle.git",
-                "reference": "4a7b126e9c22f858e3584b19ddce6e5bdd7677ee"
+                "reference": "1a722808c73f54fabe4fca7fd659838b13a83a9d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioGeneratorBundle/zipball/4a7b126e9c22f858e3584b19ddce6e5bdd7677ee",
-                "reference": "4a7b126e9c22f858e3584b19ddce6e5bdd7677ee",
+                "url": "https://api.github.com/repos/sensiolabs/SensioGeneratorBundle/zipball/1a722808c73f54fabe4fca7fd659838b13a83a9d",
+                "reference": "1a722808c73f54fabe4fca7fd659838b13a83a9d",
                 "shasum": ""
             },
             "require": {
@@ -1160,7 +1160,7 @@
                 }
             ],
             "description": "This bundle generates code for you",
-            "time": "2013-08-21 18:09:35"
+            "time": "2013-09-11 09:37:40"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -1441,12 +1441,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "a672bba5cbe2e077534c4a676baaa8fceeaea70a"
+                "reference": "c59f52b50b4af737226216d9e59ac24c4d831894"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/a672bba5cbe2e077534c4a676baaa8fceeaea70a",
-                "reference": "a672bba5cbe2e077534c4a676baaa8fceeaea70a",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/c59f52b50b4af737226216d9e59ac24c4d831894",
+                "reference": "c59f52b50b4af737226216d9e59ac24c4d831894",
                 "shasum": ""
             },
             "require": {
@@ -1541,7 +1541,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2013-09-09 12:26:34"
+            "time": "2013-09-11 12:33:06"
         },
         {
             "name": "twig/extensions",

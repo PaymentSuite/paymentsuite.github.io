@@ -3,7 +3,6 @@ mmoreram_front:
     type:     annotation
     prefix:   /
 
-
-befactory_paymill_payment:
-    resource: .
-    type:     extra
+paymill_payment_routes:
+        resource: .
+        type: paymill
