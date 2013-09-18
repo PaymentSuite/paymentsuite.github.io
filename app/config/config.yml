@@ -66,14 +66,12 @@ swiftmailer:
     spool:     { type: memory }
 
 paymill:
-    public_key: XXXXXXXXXXXX
-    private_key: XXXXXXXXXXXX
-    currency: USD
+    public_key: 565850481284e8b680af3d2538f08d55
+    private_key: b5dc2f10fd2a314ee92ece9293feae95
     payment_success:
         route: payment_success
         order_append: true
         order_append_field: order_id
     payment_fail:
         route: payment_failed
-        cart_append: true
-        cart_append_field: cart_id
+        order_append: false

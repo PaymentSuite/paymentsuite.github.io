@@ -2,10 +2,10 @@
 
 namespace Mmoreram\PaymentBridgeBundle\Services;
 
-use Mmoreram\PaymentCoreBundle\Services\Interfaces\OrderWrapperInterface;
+use Mmoreram\PaymentCoreBundle\Services\Interfaces\PaymentBridgeInterface;
 use Doctrine\ORM\EntityManager;
 
-class PaymentOrderWrapper implements OrderWrapperInterface
+class PaymentBridge implements PaymentBridgeInterface
 {
 
     /**
@@ -92,5 +92,38 @@ class PaymentOrderWrapper implements OrderWrapperInterface
             ->find($orderId);
 
         return $this->order;
+    }
+
+
+    /**
+     * Get currency
+     * 
+     * @return string
+     */
+    public function getCurrency()
+    {
+        return 'EUR';
+    }
+
+
+    /**
+     * Get amount
+     * 
+     * @return integer
+     */
+    public function getAmount()
+    {
+        return 10.00;
+    }
+
+
+    /**
+     * Get extra data
+     * 
+     * @return array
+     */
+    public function getExtraData()
+    {
+        return array();
     }
 }

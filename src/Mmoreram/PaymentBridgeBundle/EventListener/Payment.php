@@ -2,8 +2,8 @@
 
 namespace Mmoreram\PaymentBridgeBundle\EventListener;
 
-use Mmoreram\PaymentCoreBundle\Event\PaymentSuccessEvent;
-use Mmoreram\PaymentCoreBundle\Event\PaymentFailEvent;
+use Mmoreram\PaymentCoreBundle\Event\PaymentOrderSuccessEvent;
+use Mmoreram\PaymentCoreBundle\Event\PaymentOrderFailEvent;
 use Mmoreram\FrontBundle\Entity\Order;
 use Doctrine\ORM\EntityManager;
 use Swift_Mailer;
@@ -49,12 +49,12 @@ class Payment
     /**
      * On payment success event
      *
-     * @param PaymentSuccessEvent $paymentSuccessEvent Payment Success event
+     * @param PaymentOrderSuccessEvent $paymentOrderSuccessEvent Payment Order Success event
      */
-    public function onPaymentSuccess(PaymentSuccessEvent $paymentSuccessEvent)
+    public function onPaymentSuccess(PaymentOrderSuccessEvent $paymentOrderSuccessEvent)
     {
 
-        $price = $paymentSuccessEvent->getCartWrapper()->getAmount();
+        $price = $paymentOrderSuccessEvent->getPaymentBridge()->getAmount();
 
         /**
          * We should just create an order associated to current Cart
@@ -65,16 +65,16 @@ class Payment
         $this->entityManager->persist($order);
         $this->entityManager->flush();
 
-        $paymentSuccessEvent->getOrderWrapper()->setOrder($order);        
+        $paymentOrderSuccessEvent->getPaymentBridge()->setOrder($order);        
     }
 
 
     /**
      * On payment success event
      *
-     * @param PaymentSuccessEvent $paymentSuccessEvent Payment Success event
+     * @param PaymentOrderFailEvent $paymentOrderFailEvent Payment Order Fail event
      */
-    public function onPaymentFail(PaymentFailEvent $paymentFailEvent)
+    public function onPaymentFail(PaymentOrderFailEvent $paymentOrderFailEvent)
     {
         
     }
