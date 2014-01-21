@@ -19,8 +19,8 @@ class AppKernel extends Kernel
             new Mmoreram\FrontBundle\MmoreramFrontBundle(),
             new Mmoreram\PaymentBridgeBundle\PaymentBridgeBundle(),
 
-            new Mmoreram\PaymentCoreBundle\PaymentCoreBundle(),
-            new Mmoreram\PaymillBundle\PaymillBundle(),
+            new PaymentSuite\PaymentCoreBundle\PaymentCoreBundle(),
+            new PaymentSuite\PaymillBundle\PaymillBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
