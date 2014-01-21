@@ -2,8 +2,8 @@
 
 namespace Mmoreram\PaymentBridgeBundle\EventListener;
 
-use Mmoreram\PaymentCoreBundle\Event\PaymentOrderSuccessEvent;
-use Mmoreram\PaymentCoreBundle\Event\PaymentOrderFailEvent;
+use PaymentSuite\PaymentCoreBundle\Event\PaymentOrderSuccessEvent;
+use PaymentSuite\PaymentCoreBundle\Event\PaymentOrderFailEvent;
 use Mmoreram\FrontBundle\Entity\Order;
 use Doctrine\ORM\EntityManager;
 use Swift_Mailer;
