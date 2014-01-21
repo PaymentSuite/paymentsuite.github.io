@@ -2,7 +2,7 @@
 
 namespace Mmoreram\PaymentBridgeBundle\Services;
 
-use Mmoreram\PaymentCoreBundle\Services\Interfaces\PaymentBridgeInterface;
+use PaymentSuite\PaymentCoreBundle\Services\Interfaces\PaymentBridgeInterface;
 use Doctrine\ORM\EntityManager;
 
 class PaymentBridge implements PaymentBridgeInterface
