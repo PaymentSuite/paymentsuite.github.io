@@ -1,6 +1,6 @@
 <?php
 
-namespace Mmoreram\PaymentBridgeBundle;
+namespace PaymentSuite\PaymentBridgeBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

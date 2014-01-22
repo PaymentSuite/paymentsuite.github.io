@@ -1,6 +1,6 @@
 <?php
 
-namespace Mmoreram\FrontBundle\DependencyInjection;
+namespace PaymentSuite\PaymentBridgeBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -18,7 +18,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('mmoreram_front');
+        $rootNode = $treeBuilder->root('mmoreram_payment_bridge');
 
         // Here you should define the parameters that are allowed to
         // configure your bundle. See the documentation linked above for

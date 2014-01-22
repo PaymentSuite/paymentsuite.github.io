@@ -1,12 +1,12 @@
 services:
 
     payment.bridge:
-        class: Mmoreram\PaymentBridgeBundle\Services\PaymentBridge
+        class: PaymentSuite\PaymentBridgeBundle\Services\PaymentBridge
         arguments:
             entity.manager: "@doctrine.orm.entity_manager"
 
     payment.event.listener:
-        class: Mmoreram\PaymentBridgeBundle\EventListener\Payment
+        class: PaymentSuite\PaymentBridgeBundle\EventListener\Payment
         arguments:
             entity.manager: "@doctrine.orm.entity_manager"
             mailer: @mailer

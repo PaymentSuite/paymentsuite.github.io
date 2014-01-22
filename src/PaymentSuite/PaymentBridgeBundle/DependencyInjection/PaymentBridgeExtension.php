@@ -1,6 +1,6 @@
 <?php
 
-namespace Mmoreram\PaymentBridgeBundle\DependencyInjection;
+namespace PaymentSuite\PaymentBridgeBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;

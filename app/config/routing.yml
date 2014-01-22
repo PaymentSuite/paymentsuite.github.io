@@ -1,5 +1,5 @@
 mmoreram_front:
-    resource: "@MmoreramFrontBundle/Controller/"
+    resource: "@PaymentSuiteFrontBundle/Controller/"
     type:     annotation
     prefix:   /
 

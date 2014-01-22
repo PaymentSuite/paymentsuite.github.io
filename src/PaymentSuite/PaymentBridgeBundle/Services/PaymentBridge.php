@@ -1,6 +1,6 @@
 <?php
 
-namespace Mmoreram\PaymentBridgeBundle\Services;
+namespace PaymentSuite\PaymentBridgeBundle\Services;
 
 use PaymentSuite\PaymentCoreBundle\Services\Interfaces\PaymentBridgeInterface;
 use Doctrine\ORM\EntityManager;
@@ -88,7 +88,7 @@ class PaymentBridge implements PaymentBridgeInterface
     {
         $this->order = $this
             ->entityManager
-            ->getRepository('MmoreramFrontBundle:Order')
+            ->getRepository('PaymentSuiteFrontBundle:Order')
             ->find($orderId);
 
         return $this->order;

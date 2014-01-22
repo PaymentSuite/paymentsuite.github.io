@@ -1,6 +1,6 @@
 <?php
 
-namespace Mmoreram\FrontBundle\Controller;
+namespace PaymentSuite\FrontBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
@@ -8,12 +8,12 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
 use Symfony\Component\HttpFoundation\Request;
 
-use Mmoreram\FrontBundle\Entity\Order;
-use Mmoreram\FrontBundle\Entity\Cart;
+use PaymentSuite\FrontBundle\Entity\Order;
+use PaymentSuite\FrontBundle\Entity\Cart;
 
 
 /**
- * @Route()
+ * @Route("sandbox/")
  */
 class PaymentController extends Controller
 {
@@ -21,7 +21,7 @@ class PaymentController extends Controller
     /**
      * Method for listing all possible payment methods
      * 
-     * @Route("", name="payment_checkout")
+     * @Route("", name="sandbox")
      * @Template()
      */
     public function checkoutAction(Request $request)
@@ -34,7 +34,7 @@ class PaymentController extends Controller
         if ($session->get('cart_id')) {
 
             $cart = $entityManager
-                ->getRepository('MmoreramFrontBundle:Cart')
+                ->getRepository('PaymentSuiteFrontBundle:Cart')
                 ->find($session->get('cart_id'));
 
         } else {
@@ -59,7 +59,7 @@ class PaymentController extends Controller
      * @Route("/success/{order_id}", name="payment_success")
      * @Template()
      * 
-     * @ParamConverter("order", class="MmoreramFrontBundle:Order", options= {
+     * @ParamConverter("order", class="PaymentSuiteFrontBundle:Order", options= {
      *      "id"= "order_id"
      * })
      */
@@ -75,7 +75,7 @@ class PaymentController extends Controller
      * @Route("/fail/{cart_id}", name="payment_failed")
      * @Template()
      * 
-     * @ParamConverter("cart", class="MmoreramFrontBundle:Cart", options= {
+     * @ParamConverter("cart", class="PaymentSuiteFrontBundle:Cart", options= {
      *      "id"= "cart_id"
      * })
      */

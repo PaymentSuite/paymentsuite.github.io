@@ -1,6 +1,6 @@
 <?php
 
-namespace Mmoreram\FrontBundle\Entity;
+namespace PaymentSuite\FrontBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -8,9 +8,9 @@ use Doctrine\ORM\Mapping as ORM;
  * Cart
  *
  * @ORM\Entity()
- * @ORM\Table(name="carts")
+ * @ORM\Table(name="orders")
  */
-class Cart
+class Order
 {
 
     /**
