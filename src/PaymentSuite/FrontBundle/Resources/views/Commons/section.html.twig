@@ -1,0 +1,38 @@
+{% set content = '_content' ~ number %}
+
+<section id="{{ id }}">
+	<div class="wrap">
+		<div class="container_12">
+			<div class="grid_12">
+
+				{% if (type == 'main') %}
+					<h1>{{ '_header1' | trans }}</h1>
+					<h2>{{ '_header2' | trans }}</h2>
+
+				{% elseif (type == 'blocks') %}
+						<h2>{{ id | trans | capitalize | replace({'-' : ' '}) }}</h2>
+						<p>{{ content | trans }}</p>
+					</div>
+
+					<div class="grid_3">
+						{% include 'PaymentSuiteFrontBundle:Commons:block.html.twig' with {'image' : 'github-mark.png', 'header' : 'Github', 'description' : 'Visit our public repository'} %}
+					</div>
+					<div class="grid_3">
+						{% include 'PaymentSuiteFrontBundle:Commons:block.html.twig' with {'image' : 'github-mark.png', 'header' : 'Github', 'description' : 'Visit our public repository'} %}
+					</div>
+					<div class="grid_3">
+						{% include 'PaymentSuiteFrontBundle:Commons:block.html.twig' with {'image' : 'github-mark.png', 'header' : 'Github', 'description' : 'Visit our public repository'} %}
+					</div>
+					<div class="grid_3">
+						{% include 'PaymentSuiteFrontBundle:Commons:block.html.twig' with {'image' : 'github-mark.png', 'header' : 'Github', 'description' : 'Visit our public repository'} %}
+					</div>
+
+				{% else %}
+					<h2>{{ id | trans | capitalize | replace({'-' : ' '}) }}</h2>
+					<p>{{ content | trans }}</p>
+				{% endif %}
+
+			</div>
+		</div>
+	</div>
+</section>

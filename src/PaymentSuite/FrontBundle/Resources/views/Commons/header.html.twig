@@ -2,14 +2,15 @@
 	<div class="wrap">
 		<div class="container_12">
 			<div class="grid_6">
-				<a href="#" class="brand">PaySt</a>
+				<a href="#" class="brand">{{ '_brand' | trans }}</a>
 			</div>
 			<nav class="grid_6">
 				<ul class="navigator">
-					<li><a href="#">what is this ?</a></li>
-					<li><a href="#how-works">how works ?</a></li>
-					<li><a href="#links">links</a></li>
-					<li><a href="#contact">contact</a></li>
+					<li><a href="#{{ '_section1' | trans | lower | replace(' ', '-')}}">{{ '_section1' | trans | lower }}</a></li>
+					<li><a href="#{{ '_section2' | trans | lower | replace(' ', '-')}}">{{ '_section2' | trans | lower }}</a></li>
+					<li><a href="#{{ '_section3' | trans | lower | replace(' ', '-')}}">{{ '_section3' | trans | lower }}</a></li>
+					<li><a href="#{{ '_section4' | trans | lower | replace(' ', '-')}}">{{ '_section4' | trans | lower }}</a></li>
+					<li><a href="#{{ '_footer_header' | trans | lower | replace(' ', '-')}}">{{ '_footer_header' | trans | lower }}</a></li>
 				</ul>
 			</nav>
 		</div>

@@ -1,3 +1,23 @@
-# translations
+# Brand
+_brand: PaySt
 
-_content: hola !
+# Main
+_header1: Symfony payment motherfucker suite
+_header2: The best payment gromenauer in the middle of the sky
+
+# Sections
+_section1: Home
+_section2: What is this
+_section3: How works
+_section4: Links
+_section5: Contact
+
+# Content
+_content1: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, quidem, placeat, asperiores, provident et pariatur sequi quod optio mollitia quam similique deleniti non exercitationem alias hic a est totam accusantium dicta aliquid quis aspernatur explicabo rerum consequatur ut at doloremque tempore voluptatum rem. Error, est, autem, odit aut mollitia voluptas vitae iste necessitatibus numquam incidunt perspiciatis rem? Ad, consequatur, autem nihil magnam alias minima ipsa ex totam repudiandae nobis dolor magni deserunt vel quibusdam reiciendis ullam corporis officiis libero nam vero recusandae at odio temporibus rem ut nesciunt voluptate soluta eveniet consequuntur dolorem eos repellendus minus iure cum quod qui!"
+_content2: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, quidem, placeat, asperiores, provident et pariatur sequi quod optio mollitia quam similique deleniti non exercitationem alias hic a est totam accusantium dicta aliquid quis aspernatur explicabo rerum consequatur ut at doloremque tempore voluptatum rem. Error, est, autem, odit aut mollitia voluptas vitae iste necessitatibus numquam incidunt perspiciatis rem? Ad, consequatur, autem nihil magnam alias minima ipsa ex totam repudiandae nobis dolor magni deserunt vel quibusdam reiciendis ullam corporis officiis libero nam vero recusandae at odio temporibus rem ut nesciunt voluptate soluta eveniet consequuntur dolorem eos repellendus minus iure cum quod qui!"
+_content3: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, quidem, placeat, asperiores, provident et pariatur sequi quod optio mollitia quam similique deleniti non exercitationem alias hic a est totam accusantium dicta aliquid quis aspernatur explicabo rerum consequatur ut at doloremque tempore voluptatum rem. Error, est, autem, odit aut mollitia voluptas vitae iste necessitatibus numquam incidunt perspiciatis rem? Ad, consequatur, autem nihil magnam alias minima ipsa ex totam repudiandae nobis dolor magni deserunt vel quibusdam reiciendis ullam corporis officiis libero nam vero recusandae at odio temporibus rem ut nesciunt voluptate soluta eveniet consequuntur dolorem eos repellendus minus iure cum quod qui!"
+_content4: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, quidem, alias, ipsum quaerat a odit iusto reiciendis quasi culpa adipisci corrupti unde. Eaque, nobis doloremque ad dignissimos laudantium explicabo autem."
+
+# Footer
+_footer_header: Contact
+_footer_content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, quidem, alias, ipsum quaerat a odit iusto reiciendis quasi culpa adipisci corrupti unde. Eaque, nobis doloremque ad dignissimos laudantium explicabo autem."

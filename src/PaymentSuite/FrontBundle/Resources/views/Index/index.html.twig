@@ -1,69 +1,27 @@
+{% extends 'PaymentSuiteFrontBundle::layout.html.twig' %}
+
 {% block meta_tags %}
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="robots" content="index,follow">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="robots" content="index,follow">
 {% endblock %}
 
 {% block body %}
 
 	{% include 'PaymentSuiteFrontBundle:Commons:header.html.twig' %}
 
-	<section id="home">
-		<div class="wrap">
-			<div class="container_12">
-				<div class="grid_12">
-					<h1>Symfony payment motherfucker suite</h1>
-					<h2>The best payment gromenauer in the middle of the sky</h2>
-				</div>
-			</div>
-		</div>
-	</section>
+	{% set section_id = '_section1' | trans | lower | replace({' ' : '-'}) %}
+	{% include 'PaymentSuiteFrontBundle:Commons:section.html.twig' with { 'id' : section_id, 'number' : 1, 'type' : 'main' } %}
 
-	{% include 'PaymentSuiteFrontBundle:Commons:section_default.html.twig' with {'id' : 'what-is-this', 'header' : 'What is this'} %}
+	{% set section_id = '_section2' | trans | lower | replace({' ' : '-'}) %}
+	{% include 'PaymentSuiteFrontBundle:Commons:section.html.twig' with { 'id' : section_id, 'number' : 2, 'type' : 'default' } %}
+
+	{% set section_id = '_section3' | trans | lower | replace({' ' : '-'}) %}
+	{% include 'PaymentSuiteFrontBundle:Commons:section.html.twig' with { 'id' : section_id, 'number' : 3, 'type' : 'default' } %}
+
+	{% set section_id = '_section4' | trans | lower | replace({' ' : '-'}) %}
+	{% include 'PaymentSuiteFrontBundle:Commons:section.html.twig' with { 'id' : section_id, 'number' : 4, 'type' : 'blocks' } %}
 	
-	{% include 'PaymentSuiteFrontBundle:Commons:section_default.html.twig' with {'id' : 'how-works', 'header' : 'How works'} %}
-
-	<section id="links">
-		<div class="container_12">
-			<div class="grid_12">
-				<h2>Links</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae modi vel nesciunt quaerat quibusdam corporis earum et autem unde libero! Facere, porro sit autem perferendis doloribus dolorum ullam ad repellat?</p>
-			</div>
-			<div class="grid_3">
-				<div class="block-links">
-					<img src="img/github-mark.png" alt="Github link">
-					<h3>Github</h3>
-					<p>Visit our public repository</p>
-					<button class="button">Go there !</button>
-				</div>
-			</div>
-			<div class="grid_3">
-				<div class="block-links">
-					<img src="img/github-mark.png" alt="Github link">
-					<h3>Github</h3>
-					<p>Visit our public repository</p>
-					<button class="button">Go there !</button>
-				</div>
-			</div>
-			<div class="grid_3">
-				<div class="block-links">
-					<img src="img/github-mark.png" alt="Github link">
-					<h3>Github</h3>
-					<p>Visit our public repository</p>
-					<button class="button">Go there !</button>
-				</div>
-			</div>
-			<div class="grid_3">
-				<div class="block-links">
-					<img src="img/github-mark.png" alt="Github link">
-					<h3>Github</h3>
-					<p>Visit our public repository</p>
-					<button class="button">Go there !</button>
-				</div>
-			</div>
-		</div>
-	</section>
-
 	{% include 'PaymentSuiteFrontBundle:Commons:footer.html.twig' %}
 
 {% endblock %}

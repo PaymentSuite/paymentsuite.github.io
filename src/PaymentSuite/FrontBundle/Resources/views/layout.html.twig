@@ -13,11 +13,10 @@
 
 	{% block meta_tags %}{% endblock %}
 
-	<link href="{{ asset('favicon.ico') }}" rel="icon" type="image/vnd.microsoft.icon">
-	<link href="{{ asset('favicon.ico') }}" rel="shortcut icon" type="image/x-icon">
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
 
 	{% block header_styles %}
-		<link rel="stylesheet" type="text/css" href="{{ asset('main.css') }}" media="screen" />
+		<link rel="stylesheet" type="text/css" href="{{ asset('bundles/paymentsuitefront/css/main.css') }}" media="screen" />
 	{% endblock %}
 
 	{% block header_scripts %}{% endblock %}
@@ -35,7 +34,6 @@
 
 	{% block footer_scripts %}
 		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-		<script type="text/javascript" src="{{ asset('main.js') }}"></script>
 	{% endblock %}
 </body>
 </html>
