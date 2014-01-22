@@ -1,0 +1,68 @@
+/* ======================================================================
+ * NORMALIZE
+ * ======================================================================
+
+body
+	font-family: $font-base
+	font-size: $size-font-base
+	background-color: $color-background
+
+section
+	width: 960px
+	margin: 0 auto
+	padding: 1.5em 0 0
+
+footer
+	margin-top: 4em
+	padding: 2em 0 10em
+	background-color: $color-footer
+
+header
+	width: 100%
+	position: fixed
+	min-height: 68px
+	background-color: $color-header
+	border-bottom: 1px solid $color-border
+
+h1, h2, h3, h4, h5, h6, a, p
+	line-height: normal
+	color: $color-font-base
+
+h1
+	margin: 0.4em 0
+	color: $color-font-header
+	font-size: $size-font-base * 3
+
+h2
+	margin: 0.3em 0
+	color: $color-font-header
+	font-size: $size-font-base * 2
+
+h3
+	margin: 0.3em 0
+	color: $color-font-header
+	font-family: $font-base-bold
+	font-size: $size-font-base * 1
+
+p
+	margin-bottom: 1em
+	text-align: justify
+
+a
+	text-decoration: none
+	+transition(color, 0.2s)
+
+	&:hover
+		color: $color-corporative
+
+label
+	font-family: $font-base-bold
+
+input
+	+reset-input
+	+border-radius(3px)
+
+button
+	+reset-button
+	+border-radius(4px)
+	font: normal $size-font-base / normal $font-base-bold

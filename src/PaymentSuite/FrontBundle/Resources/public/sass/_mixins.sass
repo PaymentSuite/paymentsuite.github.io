@@ -1,0 +1,66 @@
+/* ----------------------------------------------------------------------
+ * Mixins
+ * ----------------------------------------------------------------------
+
+=border-radius($radius)
+	-webkit-border-radius: $radius
+	-moz-border-radius: $radius
+	-o-border-radius: $radius
+	border-radius: $radius
+
+=box-shadow($hor, $ver, $blur, $spread, $color, $inset:"")
+	-webkit-box-shadow: $hor $ver $blur $spread $color #{$inset}
+	-moz-box-shadow: $hor $ver $blur $spread $color #{$inset}
+	-o-box-shadow: $hor $ver $blur $spread $color #{$inset}
+	box-shadow: $hor $ver $blur $spread $color #{$inset}
+
+=transition($property, $time, $type:"")
+	-webkit-transition: $property $time #{$type}
+	-moz-transition: $property $time #{$type}
+	-ms-transition: $property $time #{$type}
+	-o-transition: $property $time #{$type}
+	transition: $property $time #{$type}
+
+=appearance($type)
+	-webkit-appearance: $type
+	-moz-appearance: $type
+	appearance: $type
+
+=box-sizing
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+
+=use-select($value)
+	-webkit-user-select: $value
+	-moz-user-select: $value
+	-ms-user-select: $value
+	-o-user-select: $value
+
+=reset-button
+	border: none
+	cursor: pointer
+	margin-bottom: 0
+	text-align: center
+	padding: 0.7em 1em
+	font-weight: normal
+	line-height: normal
+	white-space: nowrap
+	display: inline-block
+	vertical-align: middle
+	background-image: none
+	+use-select(none)
+	+appearance(none)
+
+=reset-input
+	border: none
+	margin-bottom: 0
+	padding: 0.87em 1em
+	font-weight: normal
+	line-height: normal
+	white-space: nowrap
+	display: inline-block
+	vertical-align: middle
+	background-image: none
+	+use-select(none)
+	+appearance(none)
