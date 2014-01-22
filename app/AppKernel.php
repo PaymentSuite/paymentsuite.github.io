@@ -16,8 +16,8 @@ class AppKernel extends Kernel
             new Symfony\Bundle\AsseticBundle\AsseticBundle(),
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
-            new Mmoreram\FrontBundle\MmoreramFrontBundle(),
-            new Mmoreram\PaymentBridgeBundle\PaymentBridgeBundle(),
+            new PaymentSuite\FrontBundle\PaymentSuiteFrontBundle(),
+            new PaymentSuite\PaymentBridgeBundle\PaymentBridgeBundle(),
 
             new PaymentSuite\PaymentCoreBundle\PaymentCoreBundle(),
             new PaymentSuite\PaymillBundle\PaymillBundle(),
